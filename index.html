@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      ระบบบริหารจัดการเพื่อสุขภาวะในวิกฤตซ้อนวิกฤต | Infographic Web
+    </title>
+    <meta
+      name="description"
+      content="ระบบบริหารจัดการเพื่อสุขภาวะในวิกฤตซ้อนวิกฤต แบ่ง 5 ส่วน: Introduction, Prevention & Mitigation, Preparedness, Response, Recovery"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* เพิ่มความสวยเล็กน้อยโดยไม่กระทบ Tailwind */
+      .glass {
+        backdrop-filter: blur(10px);
+      }
+      .prose-list-tight li {
+        margin-top: 0.35rem;
+        margin-bottom: 0.35rem;
+      }
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        .print-cols {
+          columns: 2;
+          column-gap: 2rem;
+        }
+        a[href^="#"]::after {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- Header / Hero -->
+    <header class="relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-sky-100 via-indigo-100 to-fuchsia-100"
+      ></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="glass bg-white/70 rounded-3xl shadow-xl p-8 md:p-12">
+          <div
+            class="flex flex-col gap-6 md:flex-row md:items-center md:gap-10"
+          >
+            <div class="shrink-0">
+              <!-- Icon -->
+              <div
+                class="w-20 h-20 rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 flex items-center justify-center shadow-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-11 h-11 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.153-.439 1.591 0L21.75 12M4.5 9.75v9a2.25 2.25 0 002.25 2.25H9a.75.75 0 00.75-.75V15a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v5.25a.75.75 0 00.75.75h2.25A2.25 2.25 0 0019.5 18.75v-9"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="grow">
+              <p
+                class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase text-indigo-700"
+              >
+                ระบบสุขภาวะในวิกฤตซ้อนวิกฤต
+                <span
+                  class="px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-200"
+                  >RSSH</span
+                >
+              </p>
+              <h1
+                class="mt-2 text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-slate-900"
+              >
+                ระบบบริหารจัดการเพื่อสุขภาวะใน<strong class="text-indigo-600"
+                  >วิกฤตซ้อนวิกฤต</strong
+                >
+              </h1>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="#introduction"
+                  class="no-print inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-900 text-white hover:bg-slate-800"
+                >
+                  ไปที่ Introduction
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5L21 12l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#prevention"
+                  class="no-print inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-500"
+                  >Prevention &amp; Mitigation</a
+                >
+                <a
+                  href="#preparedness"
+                  class="no-print inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-sky-600 text-white hover:bg-sky-500"
+                  >Preparedness</a
+                >
+                <a
+                  href="#response"
+                  class="no-print inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-fuchsia-600 text-white hover:bg-fuchsia-500"
+                  >Response</a
+                >
+                <a
+                  href="#recovery"
+                  class="no-print inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-500"
+                  >Recovery</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key badges -->
+        <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm"
+          >
+            <p class="text-xs font-medium text-slate-500">หลักคิด</p>
+            <p class="mt-1 font-semibold">
+              Integration • Resilience • Participation • Data
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm"
+          >
+            <p class="text-xs font-medium text-slate-500">วัฏจักรการจัดการ</p>
+            <p class="mt-1 font-semibold">
+              Prevention → Preparedness → Response → Recovery
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm"
+          >
+            <p class="text-xs font-medium text-slate-500">เครื่องมือ</p>
+            <p class="mt-1 font-semibold">
+              EOC • ICS • Simulation • Data Platform • Line OA • AI Dashboard
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm"
+          >
+            <p class="text-xs font-medium text-slate-500">แนวทางฟื้นฟู</p>
+            <p class="mt-1 font-semibold">
+              Build Back Better • AAR • กองทุนชุมชน
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sticky Nav (Desktop) -->
+    <nav
+      class="no-print hidden md:block sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center gap-6 text-sm"
+      >
+        <a
+          href="#introduction"
+          class="text-slate-700 hover:text-indigo-600 font-medium"
+          >Introduction</a
+        >
+        <a
+          href="#prevention"
+          class="text-slate-700 hover:text-indigo-600 font-medium"
+          >Prevention &amp; Mitigation</a
+        >
+        <a
+          href="#preparedness"
+          class="text-slate-700 hover:text-indigo-600 font-medium"
+          >Preparedness</a
+        >
+        <a
+          href="#response"
+          class="text-slate-700 hover:text-indigo-600 font-medium"
+          >Response</a
+        >
+        <a
+          href="#recovery"
+          class="text-slate-700 hover:text-indigo-600 font-medium"
+          >Recovery</a
+        >
+        <!-- วางต่อจากปุ่มที่มีอยู่ เช่น หลังปุ่ม Recovery -->
+        <a
+          href="./ข้อเสนอระบบบริหารจัดการเพื่อสุขภาวะในวิกฤตซ้อนวิกฤต.pdf"
+          download
+          class="ml-auto inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-500"
+        >
+          ดาวน์โหลด ข้อเสนอระบบบริหารจัดการเพื่อสุขภาวะในวิกฤตซ้อนวิกฤต
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 print:py-8">
+      <!-- INTRODUCTION -->
+      <section id="introduction" class="scroll-mt-20">
+        <div class="grid lg:grid-cols-3 gap-8">
+          <div class="lg:col-span-2">
+            <div
+              class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8"
+            >
+              <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">
+                1) Introduction
+              </h2>
+              <p class="mt-3 text-slate-700 leading-relaxed">
+                <span class="font-semibold">“วิกฤตซ้อนวิกฤต (Polycrisis)”</span>
+                คือภาวะที่วิกฤตหลายด้านเกิดขึ้นพร้อมกัน เชื่อมโยงซับซ้อน
+                และส่งผลกระทบทวีคูณ กระทบสุขภาวะของประชาชนทุกมิติ (กาย จิต สังคม
+                ปัญญา) หากการจัดการไม่ตอบสนอง อาจนำไปสู่
+                <span class="font-semibold"
+                  >“วิกฤตความศรัทธา (Crisis of Trust)”</span
+                >
+              </p>
+              <div class="mt-5 grid sm:grid-cols-2 gap-4">
+                <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                  <p class="text-sm font-semibold text-slate-900">
+                    ตัวอย่างการซ้อนทับของวิกฤต
+                  </p>
+                  <ul
+                    class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+                  >
+                    <li>โรคระบาด + ภาวะเศรษฐกิจถดถอย + ภัยธรรมชาติ</li>
+                    <li>
+                      ราคาพลังงาน/อาหารผันผวน + ภัยแล้ง/น้ำท่วม + สุขภาพจิต
+                    </li>
+                  </ul>
+                </div>
+                <div class="bg-slate-50 rounded-xl p-4 border border-slate-200">
+                  <p class="text-sm font-semibold text-slate-900">
+                    คุณลักษณะระบบที่พึงประสงค์
+                  </p>
+                  <ul
+                    class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+                  >
+                    <li>
+                      <span class="font-medium">Integration</span>
+                      เชื่อมโยงหลายระบบและหน่วยงาน
+                    </li>
+                    <li>
+                      <span class="font-medium">Resilience</span> ยืดหยุ่น
+                      ปรับตัวตามสถานการณ์
+                    </li>
+                    <li>
+                      <span class="font-medium">Participation</span>
+                      การมีส่วนร่วมของทุกภาคส่วน
+                    </li>
+                    <li>
+                      <span class="font-medium">Data-driven</span>
+                      ใช้ข้อมูลและเทคโนโลยีทันสมัย
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="mt-6 rounded-xl p-4 bg-gradient-to-r from-indigo-50 to-sky-50 border border-indigo-100"
+              >
+                <p class="text-sm text-indigo-900">
+                  <span class="font-semibold">กรอบแนวคิดหลัก:</span> Resilient
+                  &amp; Sustainable Systems for Health (RSSH) —
+                  ระบบสุขภาพที่สามารถป้องกัน เตรียมพร้อม ตอบสนอง
+                  และฟื้นฟูได้อย่างมีประสิทธิภาพ
+                  พร้อมคงความยั่งยืนของบริการในระยะยาว
+                </p>
+              </div>
+            </div>
+          </div>
+          <aside class="lg:col-span-1">
+            <div
+              class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6"
+            >
+              <h3 class="text-lg font-bold text-slate-900">ภาพรวมวัฏจักร</h3>
+              <ol class="mt-3 space-y-2 text-sm">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-indigo-600"></span>
+                  <span
+                    >Prevention &amp; Mitigation —
+                    ลดความเปราะบางตั้งแต่ต้นทาง</span
+                  >
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-sky-600"></span>
+                  <span>Preparedness — เตรียมระบบ-ซักซ้อม-กำหนดมาตรฐาน</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-fuchsia-600"></span>
+                  <span>Response — ตอบเหตุรวดเร็วและมีเอกภาพ</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 w-2 h-2 rounded-full bg-emerald-600"></span>
+                  <span
+                    >Recovery — ฟื้นฟูองค์รวมและถอดบทเรียน (Build Back
+                    Better)</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- PREVENTION & MITIGATION -->
+      <section id="prevention" class="scroll-mt-20 mt-16">
+        <div
+          class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white font-semibold"
+              >2</span
+            >
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">
+              Prevention &amp; Mitigation (การป้องกันและบรรเทา)
+            </h2>
+          </div>
+          <p class="mt-3 text-slate-700">
+            เป้าหมาย: ลดความเปราะบางพื้นที่และชุมชน
+            สร้างความพร้อมเชิงระบบตั้งแต่ต้นทาง ให้ชุมชนเข้มแข็งและพึ่งตนเองได้
+          </p>
+
+          <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- 1 -->
+            <div
+              class="rounded-2xl border border-slate-200 p-5 hover:shadow-sm"
+            >
+              <h3 class="font-bold text-slate-900">
+                1) กลไกความร่วมมือ (Collaborative Governance)
+              </h3>
+              <ul
+                class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+              >
+                <li>MOU/ข้อตกลง: อปท.–ชุมชน–เอกชน–ประชาสังคม</li>
+                <li>หน่วยกลางระดับอำเภอ/แขวง ประสานและทำแผนร่วม</li>
+                <li>แผนปฏิบัติการเฉพาะพื้นที่ ครอบคลุมทุกความเสี่ยง</li>
+              </ul>
+            </div>
+            <!-- 2 -->
+            <div
+              class="rounded-2xl border border-slate-200 p-5 hover:shadow-sm"
+            >
+              <h3 class="font-bold text-slate-900">2) งบประมาณยืดหยุ่น</h3>
+              <ul
+                class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+              >
+                <li>แนวปฏิบัติ งบฉุกเฉิน/สำรองจ่าย/ทรัพยากรท้องถิ่น</li>
+                <li>กองทุนท้องถิ่น/กองทุนชุมชน</li>
+                <li>Matching Fund (รัฐ–ท้องถิ่น–ชุมชน)</li>
+              </ul>
+            </div>
+            <!-- 3 -->
+            <div
+              class="rounded-2xl border border-slate-200 p-5 hover:shadow-sm"
+            >
+              <h3 class="font-bold text-slate-900">
+                3) ฐานข้อมูล &amp; ศักยภาพบุคลากร
+              </h3>
+              <ul
+                class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+              >
+                <li>ฐานข้อมูลกลาง: ความเสี่ยง กลุ่มเปราะบาง ทรัพยากร</li>
+                <li>พัฒนาทักษะวิเคราะห์ข้อมูล วางแผนลดความเสี่ยง</li>
+              </ul>
+            </div>
+            <!-- 4 -->
+            <div
+              class="rounded-2xl border border-slate-200 p-5 hover:shadow-sm"
+            >
+              <h3 class="font-bold text-slate-900">
+                4) มาตรฐานความพร้อมท้องถิ่น
+              </h3>
+              <ul
+                class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+              >
+                <li>แนวปฏิบัติและตัวชี้วัด “ความพร้อมบริหารจัดการวิกฤต”</li>
+                <li>ผนวกในระบบประเมินผล Local Performance</li>
+              </ul>
+            </div>
+            <!-- 5 -->
+            <div
+              class="rounded-2xl border border-slate-200 p-5 hover:shadow-sm"
+            >
+              <h3 class="font-bold text-slate-900">
+                5) ระบบสื่อสาร &amp; เตือนภัย
+              </h3>
+              <ul
+                class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+              >
+                <li>เข้าถึงได้แม้พื้นที่ห่างไกล</li>
+                <li>เตือนภัยและข้อมูลแบบ Real-time</li>
+              </ul>
+            </div>
+            <!-- 6 -->
+            <div
+              class="rounded-2xl border border-slate-200 p-5 hover:shadow-sm"
+            >
+              <h3 class="font-bold text-slate-900">
+                6) ศูนย์เรียนรู้ &amp; ฝึกอบรมชุมชน
+              </h3>
+              <ul
+                class="mt-2 text-sm text-slate-700 list-disc pl-5 prose-list-tight"
+              >
+                <li>
+                  ฝึกแกนนำ อสม./อปพร./อาสา: สื่อสารความเสี่ยง ช่วยเหลือ อพยพ
+                </li>
+                <li>Simulation ให้ประชาชนได้ฝึกจริง</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PREPAREDNESS -->
+      <section id="preparedness" class="scroll-mt-20 mt-16">
+        <div
+          class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-sky-600 text-white font-semibold"
+              >3</span
+            >
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">
+              Preparedness (การเตรียมความพร้อม)
+            </h2>
+          </div>
+          <p class="mt-3 text-slate-700">
+            เป้าหมาย:
+            เตรียมระบบปฏิบัติการและเครือข่ายให้พร้อมรับมือวิกฤตซ้อนวิกฤตอย่างเป็นระบบ
+          </p>
+
+          <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                1) แนวปฏิบัติ/คู่มือ (SOPs)
+              </h3>
+              <p class="mt-2 text-sm text-slate-700">
+                จัดทำมาตรฐานสำหรับ อปท. ชุมชน จังหวัด และพื้นที่
+                เพื่อการปฏิบัติที่สอดคล้อง
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">2) ฝึกซ้อมแผน</h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Scenario-based Simulation</li>
+                <li>Table-top Exercise (พื้นที่/จังหวัด/หลายระดับ)</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                3) โครงสร้างบัญชาการฉุกเฉิน
+              </h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>EOC (Emergency Operations Center)</li>
+                <li>
+                  ICS (Incident Command System):
+                  ทรัพยากร/อพยพ/ช่วยเหลือกลุ่มเปราะบาง
+                </li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">4) ศักยภาพเครือข่ายชุมชน</h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>ทักษะสื่อสารความเสี่ยง ช่วยเหลือ ดูแลสุขภาพกาย–ใจ</li>
+                <li>Mutual Aid System + Protocol ขอ/ให้การสนับสนุน</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                5) Data Platform &amp; การสื่อสาร
+              </h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>เชื่อมโยงส่วนกลาง–จังหวัด–ท้องถิ่น</li>
+                <li>AI Dashboard / Line OA / วิทยุชุมชน</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                6) การเรียนรู้ในระบบการศึกษา
+              </h3>
+              <p class="mt-2 text-sm text-slate-700">
+                บรรจุหลักสูตรการจัดการภัยพิบัติในโรงเรียน/อุดมศึกษา
+                ทั้งในและนอกระบบ
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESPONSE -->
+      <section id="response" class="scroll-mt-20 mt-16">
+        <div
+          class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-fuchsia-600 text-white font-semibold"
+              >4</span
+            >
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">
+              Response (การตอบสนองเมื่อเกิดภัย)
+            </h2>
+          </div>
+          <p class="mt-3 text-slate-700">
+            เป้าหมาย: ตอบโต้ภาวะวิกฤตอย่างรวดเร็ว มีเอกภาพ ลดการสูญเสียชีวิต
+            ทรัพย์สิน และผลกระทบสุขภาวะ
+          </p>
+
+          <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                1) Unified/Single Command
+              </h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>เปิดใช้ EOC ระดับอำเภอ</li>
+                <li>
+                  Micro Command (พื้นที่พิเศษ เช่น กทม./เมืองท่องเที่ยวใหญ่)
+                </li>
+                <li>เชื่อมโยง อำเภอ–ท้องถิ่น–ชุมชน</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                2) ปฏิบัติการบูรณาการเต็มเวลา
+              </h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>บริการสุขภาพกาย–จิต–สิ่งแวดล้อม–บรรเทาทุกข์</li>
+                <li>สื่อสารหลากช่องทาง ส่งคำสั่ง/ข้อมูลแบบ Real-time</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                3) ทรัพยากร &amp; ศูนย์พักพิง
+              </h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>แพลตฟอร์มติดตามสถานการณ์และทรัพยากร</li>
+                <li>ศูนย์พักพิง • Mobile Clinic • ทีม MCATT</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">
+                4) งบประมาณและการสนับสนุนเร่งด่วน
+              </h3>
+              <p class="mt-2 text-sm text-slate-700">
+                แนวปฏิบัติใช้งบฉุกเฉินส่วนกลาง/จังหวัด
+                เพื่อสนับสนุนการตอบโต้คล่องตัว
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">5) ระดมภาคีและเอกชน</h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>โลจิสติกส์ น้ำ อาหาร ไฟฟ้า IT</li>
+                <li>มูลนิธิ/สภากาชาด/อาสาสมัคร เสริมกำลังภาคสาธารณสุข</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECOVERY -->
+      <section id="recovery" class="scroll-mt-20 mt-16">
+        <div
+          class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8"
+        >
+          <div class="flex items-center gap-3">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-600 text-white font-semibold"
+              >5</span
+            >
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">
+              Recovery (การฟื้นฟูหลังภัย)
+            </h2>
+          </div>
+          <p class="mt-3 text-slate-700">
+            เป้าหมาย: ฟื้นฟูสุขภาพกาย–ใจ และระบบสังคม–เศรษฐกิจรอบด้าน
+            พร้อมยกระดับความเข้มแข็งระยะยาว
+          </p>
+
+          <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">1) แผนฟื้นฟูองค์รวม</h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>สุขภาพกาย–สุขภาพจิต</li>
+                <li>โครงสร้างพื้นฐาน บ้านเรือน โรงเรียน ศูนย์ชุมชน</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">2) กลุ่มเปราะบาง</h3>
+              <p class="mt-2 text-sm text-slate-700">
+                ติดตาม/เยียวยาด้วยระบบข้อมูลบูรณาการ
+                เพื่อความต่อเนื่องและทั่วถึง
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">3) กองทุนฟื้นฟูชุมชน</h3>
+              <p class="mt-2 text-sm text-slate-700">
+                สนับสนุนกิจกรรมเสริมความเข้มแข็งเศรษฐกิจ–สังคมของพื้นที่
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">4) ถอดบทเรียน (AAR)</h3>
+              <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>เวที ท้องถิ่น–อำเภอ–จังหวัด–ประเทศ</li>
+                <li>ปรับปรุงแผนรอบต่อไป</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-slate-200 p-5">
+              <h3 class="font-bold text-slate-900">5) Build Back Better</h3>
+              <p class="mt-2 text-sm text-slate-700">
+                ฟื้นฟูให้ดีกว่าเดิม เสริมความยั่งยืนของระบบสุขภาพ เศรษฐกิจ
+                และสังคม
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summary Table -->
+      <section id="recovery" class="scroll-mt-20 mt-16">
+        <div class="mt-8 rounded-2xl overflow-hidden border border-slate-200">
+          <div class="bg-slate-900 text-white px-5 py-3 font-semibold">
+            Essence Snapshot
+          </div>
+          <div class="bg-white px-5 py-4 overflow-x-auto">
+            <table class="min-w-full text-left text-sm">
+              <thead>
+                <tr class="text-slate-600">
+                  <th class="py-2 pr-6">ขั้นตอน</th>
+                  <th class="py-2 pr-6">คำสำคัญ</th>
+                  <th class="py-2 pr-6">เป้าหมาย</th>
+                  <th class="py-2">ผลลัพธ์</th>
+                </tr>
+              </thead>
+              <tbody class="align-top">
+                <tr class="border-t">
+                  <td class="py-3 pr-6 font-semibold">
+                    Prevention &amp; Mitigation
+                  </td>
+                  <td class="py-3 pr-6">
+                    Collaboration / Governance / Database / Funding
+                  </td>
+                  <td class="py-3 pr-6">ลดความเปราะบาง เสริมความเข้มแข็ง</td>
+                  <td class="py-3">ชุมชนพร้อมรับภัย มีระบบข้อมูลร่วม</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-6 font-semibold">Preparedness</td>
+                  <td class="py-3 pr-6">
+                    SOP • Simulation • EOC • ICS • Education
+                  </td>
+                  <td class="py-3 pr-6">ระบบและบุคลากรพร้อมปฏิบัติ</td>
+                  <td class="py-3">หน่วยงานทำงานบูรณาการและสอดคล้อง</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-6 font-semibold">Response</td>
+                  <td class="py-3 pr-6">
+                    Unified Command • Real-time Data • MCATT
+                  </td>
+                  <td class="py-3 pr-6">ตอบเหตุเร็ว มีเอกภาพ</td>
+                  <td class="py-3">ลดการสูญเสียชีวิต สุขภาพ และทรัพย์สิน</td>
+                </tr>
+                <tr class="border-t">
+                  <td class="py-3 pr-6 font-semibold">Recovery</td>
+                  <td class="py-3 pr-6">Build Back Better • Fund • AAR</td>
+                  <td class="py-3 pr-6">ฟื้นฟูองค์รวม ยั่งยืน</td>
+                  <td class="py-3">คุณภาพชีวิตดีขึ้น ระบบเข้มแข็งกว่าเดิม</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div
+          class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8"
+        >
+          <div class="flex flex-col md:flex-row md:items-center gap-4">
+            <div class="grow">
+              <p class="text-slate-600 text-sm">
+                สรุปเนื้อหา:
+                <span class="font-medium"
+                  >“ร่างสมัชชาสุขภาพหัวข้อระบบบริหารจัดการเพื่อสุขภาวะในวิกฤตซ้อนวิกฤต”</span
+                >
+              </p>
+            </div>
+            <div class="no-print">
+              <a
+                href="#introduction"
+                class="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-900 text-white hover:bg-slate-800"
+              >
+                กลับขึ้นบน
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 15l7-7 7 7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Small helper: smooth scroll (optional) -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href").slice(1);
+          const el = document.getElementById(id);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
